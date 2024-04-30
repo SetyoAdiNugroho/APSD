@@ -6,11 +6,11 @@ int main() {
     int start = 10;
     int sum = 0;
 
-    for (int i = 5; i >= 1; --i) {
-        for (int j = 1; j <= i; ++j) {
+    for (int a = 5; a >= 1; --a) {
+        for (int b = 1; b <= a; ++b) {
             cout << start;
             sum += start;
-            if (j < i) {
+            if (b < a) {
                 cout << " + ";
             }
             start -= 2;
