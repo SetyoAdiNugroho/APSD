@@ -1,0 +1,19 @@
+#include <iostream>
+
+using namespace std;
+
+int hitungDeretGanjil(int jumlahDeret) {
+    int hasil = -10;
+    for (int i = 1; i <= jumlahDeret; ++i) {
+        int bilanganGanjil = i * 2;
+        hasil += bilanganGanjil;
+    }
+    return hasil;
+}
+
+int main() {
+    int jumlahDeret = 10;
+    int total = hitungDeretGanjil(jumlahDeret);
+    cout << "1 + 3 + 5 + 7 + 9 + 11 + 13 + 15 + 17 + 19 = " << total << endl;
+    return 0;
+}
