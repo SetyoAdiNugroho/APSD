@@ -1,0 +1,22 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int tinggiSegitiga = 4;
+    long long total = 1;
+
+    for (int a = 1; a <= tinggiSegitiga; ++a) {
+        long long baris = 1;
+        cout << "1";
+
+        for (int b = 1; b <= a; ++b) {
+            int bilanganGanjil = (2 * b) + 1;
+            baris *= bilanganGanjil;
+            cout << " * " << bilanganGanjil;
+        }
+        total *= baris;
+        cout << " = " << baris << endl;
+    }
+    return 0;
+}
